@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'YuseiMagic-Regular';
-    src: url(/fonts/YuseiMagic-Regular.ttf) format('truetype');
+    src: url(../public/fonts/YuseiMagic-Regular.ttf) format('truetype');
   }
 
 * {
@@ -10,56 +10,114 @@
   
 
 body {
-    background-color: rgb(105, 146, 81);
+    background-color: rgb(27, 65, 4)
 }
 
 .container-wrap {
-    border: 4px solid rgb(30, 105, 20);
-    padding: 10px;
+    border: 4px solid rgba(49, 179, 45, 0.336);
     max-width: 1000px;
     min-width: 1000px;
-    min-height: 1000px;
+    min-height: 600px;
+    max-height: 1000px;
     position: absolute;
-    top:0;
-    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgb(104, 167, 79);
+    background-color: rgb(38, 73, 24);
+    margin-top: 100px;
+    margin-bottom: 700px;
 }
 
 
 #Staking-Leaderboard {
     font-size: 25px;
     text-align: center;
-    min-width: 1000px;
-    max-width: 1000px;
-    padding-bottom: 0px;
-    padding-top: 0px;
     color: rgb(255, 255, 255);
+}
+
+#Staking-Leaderboard h1 {
+    font-weight: 100;
     font-family: YuseiMagic-Regular;
-    
+    font-size: 35px;
+    padding-top: 15px;
 }
 
 img {
     vertical-align: middle;
     margin-right: 5px;
     margin-left: 5px;
-    max-width: 30px;
-    max-height: 30px;
+    margin-bottom: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    display: flexbox;
 }
 
-table tr {
-    background-color: rgb(28, 102, 77);
+#rankings  tr {
+    background-color: rgb(70, 153, 101, 0.336);
+    font-family: YuseiMagic-Regular;
+    font-size: 14px;
 }
 
-.table {
-    width: 100%;
+.leaderboard-results {
+    border-collapse: separate;
+    border-spacing: 0px;
+    
+}
+
+th, td {
+    width: 100px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+td {
+    border-bottom: 1px solid rgb(38, 119, 65);
 }
 
 .leaderboard-results {
     min-width: 1000px;
     max-width: 1000px;
-    color: azure;
-    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#table-body tr {
+    color: white;
+    background-color: rgb(38, 73, 24);
+    font-family: YuseiMagic-Regular;
+    text-align: center;
+    height: 40px;
+    font-weight: 300;
+}
+
+.pagination {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.pagination u1 {
+    font-weight: 100;
+    font-size: 18px;
+    font-family: YuseiMagic-Regular;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pagination #btn {
+    background-color: rgb(38, 73, 24);
+    border-color:rgb(38, 73, 24);
+    padding: 2px;
+    color: white;
+    border-style: none;
+    transition-duration: 0.4s;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pagination #btn:hover {
+    background-color: #2b772d;
+    color: white;
 }
